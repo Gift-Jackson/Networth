@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Networth</title>
+    <link rel="stylesheet" href="style.css">
+    <script language="javascript" type="text/javascript">
+function removeSpaces(string) {
+ return string.split(' ').join('');
+}
+</script>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Find out my buddy's <br>Networth</h1>
+
+        <div class="input-control">
+            <input id="name" type="text" placeholder="Enter buddy's first name" onblur="this.value=removeSpaces(this.value)";>
+            <div class="errorMsg"><p>Must enter name first!</p></div>
+            <button class="btn showbtn">Show</button>
+            <button class="btn clearbtn">Clear</button>
+        </div>
+
+        <div class="resultArea">
+            <h3><span class="buddyName"></span><span class="person">'s</span> <span class="text">Networth is</span> <span class="naira">&#8358;</span><span class="net"></span></h3>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
